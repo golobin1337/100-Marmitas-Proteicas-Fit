@@ -117,7 +117,7 @@ section{padding-block:clamp(48px,8vw,96px);}
   max-width:46ch;
 }
 .hero-cta{margin-top:34px;display:flex;flex-wrap:wrap;justify-content:center;gap:18px;}
-.hero-cta .btn{white-space:nowrap;font-size:clamp(.88rem,4vw,1.05rem);padding-inline:clamp(18px,5vw,32px);}
+.hero-cta .btn{white-space:nowrap;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(.82rem,3.6vw,1.05rem);padding-inline:clamp(18px,5vw,32px);}
 .hero .price-note{margin-top:14px;font-size:.92rem;color:var(--ink-soft);font-weight:600;}
 .hero .price-note b{color:var(--ink);}
 .hero-shot{
@@ -248,6 +248,13 @@ section{padding-block:clamp(48px,8vw,96px);}
   gap:20px 32px;
 }
 .checklist .check-row p{font-weight:600;font-size:1.02rem;}
+.solution .checklist{margin-top:44px;}
+.solution:not(.benefits) .sample-carousel + .checklist{margin-top:52px;}
+
+/* segunda dobra de benefícios */
+.benefits{background:var(--surface);border-block:1px solid var(--line);}
+.benefits .checklist{max-width:760px;margin-inline:auto;}
+.benefits .hero-cta{margin-top:44px;}
 
 /* ---------- TESTIMONIALS ---------- */
 .testimonials{background:var(--surface);border-block:1px solid var(--line);text-align:center;}
@@ -282,6 +289,7 @@ section{padding-block:clamp(48px,8vw,96px);}
   display:flex;
   flex-direction:column;
 }
+.bonus-card:last-child:nth-child(odd){grid-column:1/-1;}
 .bonus-card-img{
   aspect-ratio:4/3;
   overflow:hidden;
@@ -334,6 +342,11 @@ section{padding-block:clamp(48px,8vw,96px);}
 .offer-card-inner{padding:32px 26px 36px;text-align:center;}
 .offer-shot{display:block;margin:0 auto;max-width:250px;width:100%;}
 
+.offer-title{
+  margin-top:24px;
+  font-size:clamp(1.15rem,3.4vw,1.4rem);
+  color:var(--ink);
+}
 .offer-pack-label{
   margin-top:22px;
   font-family:"Unbounded",sans-serif;
