@@ -348,6 +348,11 @@ section{padding-block:clamp(48px,8vw,96px);}
 .offer-plans .offer-card{display:flex;flex-direction:column;}
 .offer-plans .offer-card-inner{flex:1;display:flex;flex-direction:column;}
 .offer-plans .offer-summary-list{flex:1;}
+.offer-card:not(.offer-card--basic){
+  background:linear-gradient(180deg,#EEF7F0 0%,#E3F1E8 100%);
+  border-color:var(--accent-2);
+  box-shadow:0 24px 48px -28px rgba(46,107,76,.45);
+}
 .offer-card--basic{order:-1;border-color:var(--line);}
 .offer-card--basic .offer-ribbon{background:var(--ink-soft);}
 .offer-btn-primary.offer-btn-secondary{background:var(--surface);color:var(--deep-green);border:2px solid var(--deep-green);box-shadow:none;}
