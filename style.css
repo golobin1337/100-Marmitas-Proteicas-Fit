@@ -454,23 +454,6 @@ section{padding-block:clamp(48px,8vw,96px);}
 }
 .offer-btn-primary:hover{box-shadow:0 14px 30px -8px rgba(15,59,48,.6);}
 
-/* preço do plano completo em destaque */
-.offer-card:not(.offer-card--basic) .offer-price{
-  padding:20px 16px 18px;
-  border:1.5px solid rgba(46,107,76,.28);
-  border-radius:18px;
-  background:linear-gradient(180deg,#E9F4EC 0%,#DCEEE1 100%);
-  box-shadow:0 12px 24px -16px rgba(46,107,76,.45);
-}
-.offer-card:not(.offer-card--basic) .offer-price-new{
-  font-size:clamp(2.9rem,6.4vw,3.7rem);
-  color:var(--accent-2);
-}
-.offer-card:not(.offer-card--basic) .offer-price-old:last-child{
-  color:var(--deep-green);
-  font-weight:700;
-}
-
 .offer-once{margin-top:12px;font-size:.9rem;font-weight:600;color:var(--ink-soft);text-align:center;}
 
 /* botão do plano completo pulsando */
