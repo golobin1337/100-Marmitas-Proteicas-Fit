@@ -153,6 +153,31 @@ section{padding-block:clamp(48px,8vw,96px);}
 .img-placeholder svg{width:32px;height:32px;opacity:.6;}
 .img-placeholder span{font-size:.9rem;font-weight:600;max-width:22ch;}
 
+/* ---------- STORY (segunda dobra) ---------- */
+.story{background:var(--surface);border-block:1px solid var(--line);}
+.story .wrap{max-width:720px;}
+.story h2{font-size:clamp(1.5rem,3.2vw,2.1rem);}
+.story-lead{margin-top:18px;font-size:1.12rem;color:var(--ink-soft);}
+.story-lead b,.story-close b{color:var(--ink);}
+.story-list{margin-top:26px;display:flex;flex-direction:column;gap:12px;}
+.story-list li{position:relative;padding-left:32px;font-size:1.05rem;font-weight:500;}
+.story-list li::before{
+  content:"✕";
+  position:absolute;left:0;top:1px;
+  width:22px;height:22px;border-radius:50%;
+  background:rgba(226,87,43,.12);color:var(--accent);
+  font-size:.75rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.story-strong{
+  margin-top:28px;
+  font-family:"Unbounded",sans-serif;
+  font-weight:700;
+  font-size:clamp(1.1rem,2.4vw,1.35rem);
+  color:var(--accent-2);
+}
+.story-close{margin-top:16px;font-size:1.08rem;color:var(--ink-soft);}
+
 /* ---------- PAIN ---------- */
 .pain{background:var(--surface);border-block:1px solid var(--line);text-align:center;}
 .pain .wrap{max-width:760px;margin-inline:auto;}
@@ -290,6 +315,14 @@ section{padding-block:clamp(48px,8vw,96px);}
   flex-direction:column;
 }
 .bonus-card:last-child:nth-child(odd){grid-column:1/-1;}
+.bonus-total{
+  margin-top:28px;
+  font-family:"Unbounded",sans-serif;
+  font-weight:700;
+  font-size:clamp(1rem,2.4vw,1.25rem);
+  color:#FFFFFF;
+}
+.bonus-total b{color:var(--accent);}
 .bonus-card-img{
   aspect-ratio:16/10;
   overflow:hidden;
