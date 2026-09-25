@@ -155,15 +155,17 @@ section{padding-block:clamp(48px,8vw,96px);}
 
 /* ---------- STORY (segunda dobra) ---------- */
 .story{background:var(--surface);border-block:1px solid var(--line);}
+.story,.story .wrap,.story p,.story h2{text-align:center;}
+.story .wrap{margin-inline:auto;}
 .story .wrap{max-width:720px;}
 .story h2{font-size:clamp(1.5rem,3.2vw,2.1rem);}
 .story-lead{margin-top:18px;font-size:1.12rem;color:var(--ink-soft);}
 .story-lead b,.story-close b{color:var(--ink);}
 .story-list{margin-top:26px;display:flex;flex-direction:column;gap:12px;}
-.story-list li{position:relative;padding-left:32px;font-size:1.05rem;font-weight:500;}
+.story-list li{display:flex;align-items:center;justify-content:center;gap:10px;font-size:1.05rem;font-weight:500;}
 .story-list li::before{
   content:"✕";
-  position:absolute;left:0;top:1px;
+  flex:none;
   width:22px;height:22px;border-radius:50%;
   background:rgba(226,87,43,.12);color:var(--accent);
   font-size:.75rem;font-weight:800;
